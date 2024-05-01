@@ -1,0 +1,19 @@
+{
+    "name": "stephen/framework",
+    "description": "A Simple PHP framework for building web Application",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Stephen\\Framework\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Stephen Zammit",
+            "email": "stephenzammit1967@gmail.com"
+        }
+    ],
+    "minimum-stability": "alpha",
+    "require": {}
+}
