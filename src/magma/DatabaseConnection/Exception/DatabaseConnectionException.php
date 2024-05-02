@@ -6,11 +6,11 @@ namespace Magma\DatabaseConnection\Exception;
 use PDOException;
 
 class DatabaseConnectionException extends PDOException{
-    protected $message;
+    // protected $message;
 
-    protected $code;
+    // protected $code;
 
-    public function __constructor($message = null, $code = null){
+    public function __construct($message = null, $code = null){
         $this->$message = $message;
         $this->code = $code;
     }
