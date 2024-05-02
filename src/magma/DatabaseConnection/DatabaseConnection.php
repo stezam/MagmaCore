@@ -9,6 +9,7 @@ namespace Magma\DatabaseConnection;
 use PDO;
 use Exception;
 use Magma\DatabaseConnection\Exception\DatabaseConnectionException;
+use PDOException;
 
 class DatabaseConnection implements DatabaseConnectionInterface
 {
@@ -50,7 +51,7 @@ class DatabaseConnection implements DatabaseConnectionInterface
             $params
         );
 
-        }catch(Exception $exception) {
+        }catch(PDOException $exception) {
             throw new DatabaseConnectionException($exception->getMEssage(), (int)$exception->getCode());
         }
         return $this->dbh;
