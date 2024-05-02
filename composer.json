@@ -1,19 +1,47 @@
 {
     "name": "stephen/framework",
     "description": "A Simple PHP framework for building web Application",
+    "keywords": [
+        "framework",
+        "php",
+        "MagmaCore"
+    ],
     "type": "library",
     "license": "MIT",
+    "readme": "",
+    "time": "",
+    "support": {
+        "issues":"https://github.com/stezam/MagmaCore/issues",
+        "source":"https://github.com/stezam/MagmaCore/tree/master",
+        "wiki":"https://github.com/stezam/MagmaCore/wiki"
+    },
     "autoload": {
         "psr-4": {
+            "Magma\\": "src/Magma",
             "Stephen\\Framework\\": "src/"
+        }
+    },
+    "autoload-dev":{
+        "psr-4":{
+            "Magma\\Tests\\": "tests/"
         }
     },
     "authors": [
         {
             "name": "Stephen Zammit",
-            "email": "stephenzammit1967@gmail.com"
+            "email": "stephenzammit1967@gmail.com",
+            "role": "Developer"
         }
     ],
     "minimum-stability": "alpha",
-    "require": {}
+
+    "require": {
+        "php":"7.4.2|8.0",
+        "ext-mbstring": "*",
+        "ext-iconv": "*",
+        "ext-pdo": "*",
+        "ext-json": "*",
+        "ext-curl":"*",
+        "ext-simplexml": "*"
+    }
 }
